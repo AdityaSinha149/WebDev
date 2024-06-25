@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    scrollbar-width: 5px;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('image.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.navigation-bar ul {
+    display: flex;
+}
+
+.navigation-bar li {
+    margin-left: 20px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+header h1 {
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    font-size: 8em;
+    color: white;
+    text-shadow: #1f2b21;
+}
+header h3 {
+    font-family: "Cedarville Cursive";
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    font-size: 4em;
+    color: white;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+    color: #1f2b21;
+}
+
+.home {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #1f2b21; /* Dark background color */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.homepage-text {
+    margin-bottom: 20px;
+}
+
+.menu-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu-images img {
+    width: 200px; /* Adjust image size as needed */
+    height: 200px;
+    border-radius: 50%; /* Round images */
+    margin: 0 10px;
+}
+
+.food-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.food-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.food-item img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    margin: 0 10px;
+}
+
+.food-item .info {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+    color: #1f2b21;
+    display: none;
+    position: absolute;
+    top: 220px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item:hover .info {
+    display: block;
+}
+
+.food-item .info h3 {
+    margin: 0 0 10px 0;
+}
+
+.food-item .info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
