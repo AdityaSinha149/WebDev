@@ -89,6 +89,7 @@ header h3 {
     color: white;
     font-size: 1.8em;
     top: 20px;
+    text-decoration: underline;
 
 }
 
@@ -169,15 +170,23 @@ food-item .info p {
     background-size: cover;
     background-position: center;
     color: white;
+    
 }
 
-.menu h3, .menu ul {
+.menu h3{
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.menu ul {
     color:white;
     font-size: larger;
     top: 25px;
-}
+    }
+
 .menu h2{
     size: 4em;
+    text-decoration: underline;
 }
 
 .menu ul {
@@ -192,6 +201,7 @@ food-item .info p {
     color: white;
     font-size: 1.8em;
     top: 10px;
+    text-decoration: underline;
 }
 
 .contacts {
@@ -215,4 +225,101 @@ food-item .info p {
     height: 380px; 
     margin-right: 1px; 
 
+}
+.contacts {
+    background-color: #1f2b21;
+      padding: 40px 20px;
+    text-align: center;
+    color: #e8e8e8;
+}
+
+.contacts h1{
+    size: 4em;
+    text-decoration: underline;
+
+}
+
+.contacts-para p{
+    font-size: large;
+    color: white;
+
+}
+.contacts form {
+    display:flexbox ;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+}
+
+
+.contacts form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contacts form input,
+.contacts form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacts form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacts form button:hover {
+    background-color: #555;
+}
+.team {
+    background-color: #1f2b21;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+.team h1{
+    size: 4em;
+    text-decoration: underline;
+}
+
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.team-info,
+.team-list {
+    flex: 1;
+    margin: 20px;
+}
+
+.team-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.team-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team-list ul li {
+    margin-bottom: 10px;
 }
